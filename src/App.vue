@@ -83,7 +83,7 @@ export default {
     initialize() {
       this.items = [];
     },
-    generateTreeView(ev) {
+    generateTreeView() {
       this.initialize();
 
       const lines = this.text.split('\n');
@@ -128,7 +128,6 @@ export default {
         }
         curNode[end].push(value);
       }
-      console.log(tree);
       this.tree = tree;
 
       const arrowKeys = ['ArrowUp', 'ArrowRight', 'ArrowDown', 'ArrowLeft'];

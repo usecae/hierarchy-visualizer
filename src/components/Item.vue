@@ -42,7 +42,7 @@ export default {
   },
   props: {
     keyString: String,
-    children: Object|Array,
+    children: Object,
     ignoreSigns: Array,
     isDisplayed: Boolean
   },
