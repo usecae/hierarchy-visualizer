@@ -81,6 +81,7 @@ export default {
   },
   methods: {
     initialize() {
+      this.$ga.page(window.location.pathname + window.location.search);
       this.items = [];
     },
     generateTreeView() {
